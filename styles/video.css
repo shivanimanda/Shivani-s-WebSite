@@ -1,0 +1,125 @@
+
+.first-thumb {
+  width: 100%;
+}
+.video-title {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.pro-pic {
+  width: 36px;
+  border-radius: 50px;
+}
+.thumbnails-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+.name ,
+.views {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+.name {
+  margin-bottom: 4px;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1000px) {
+  .name,
+  .views {
+    font-size: 14px;
+  }
+}
+.channel-icon-container {
+  position: relative;
+  display: inline-block;
+}
+.channel-tooltip {
+  background-color: white;
+  width: 200px;
+  padding: 12px 12px;
+  box-shadow:  2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  position: absolute;
+  top: 55px;
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.15s;
+}
+.channel-tooltip-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 8px
+}
+.channel-tooltip-name {
+  font-family: Roboto, arial;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.channel-tooltip-stats {
+  font-family: Roboto, arial;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+.channel-icon-container:hover .channel-tooltip-name {
+  opacity: 1;
+}
+.thumbnails {
+  margin-bottom: 8px;
+  position: relative;
+}
+.entire-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  font-size: 12px;
+  padding: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 2px;
+}
